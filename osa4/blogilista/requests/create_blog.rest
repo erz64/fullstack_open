@@ -2,6 +2,7 @@ POST http://localhost:3001/api/blogs
 Content-Type: application/json
 
 {
-    "title": "Raamattu",
-    "author": "Jeesus"
+    "author": "George Orwell",
+    "url": "ok",
+    "likes": 2
 }
