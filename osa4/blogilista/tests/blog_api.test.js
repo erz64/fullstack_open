@@ -11,7 +11,7 @@ beforeEach(async () => {
   await Blog.insertMany(helper.initialBlogs)
 })
 
-test('notes all returned as json', async () => {
+test('blogs all returned as json', async () => {
   await api
     .get('/api/blogs')
     .expect(200)
@@ -19,7 +19,7 @@ test('notes all returned as json', async () => {
 
 })
 
-test('all notes are returned', async () => {
+test('all blogs are returned', async () => {
   const response = await api.get('/api/blogs')
 
   expect(response.body).toHaveLength(helper.initialBlogs.length)
